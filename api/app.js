@@ -7,7 +7,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/angular');
+// mongoose.connect('mongodb://localhost:27017/angular');
 
 var routes = require('./config/routes');
 

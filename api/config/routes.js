@@ -5,7 +5,7 @@ var methodOverride = require('method-override');
 
 var hateAngularController = require('../controllers/hate-angular-controller.js');
 
-router.route('/home')
+router.route('/posts')
   //GET all posts
   .get(hateAngularController.getAll)
 

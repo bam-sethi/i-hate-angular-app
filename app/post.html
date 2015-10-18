@@ -1,0 +1,32 @@
+
+<section ng-controller="PostController as posts">
+    <form ng-submit="posts.addPost()" id="newPost">
+      <div>
+        <label for="new-post-title">title:</label>
+        <input type="text" id="new-post-title" ng-model="posts.newPost.title">
+      </div>
+      <div>
+        <label for="new-post-author">Author:</label>
+        <input type="text" id="new-post-author" ng-model="posts.newPost.author">
+      </div>
+      <div>
+        <label for="new-post-content">Content:</label>
+        <input type="text" id="new-post-content" ng-model='posts.newPost.content'>
+      </div>      
+      <div>
+        <label for="new-post-photo">Image url:</label>
+        <input type="text" id="new-post-photo" ng-model='posts.newPost.photo'>
+      </div>
+      <div>
+        <label for="new-post-video">Video url:</label>
+        <input type="text" id="new-post-video" ng-model='posts.newPost.video'>
+      </div>     
+      <div>
+        <label for="new-post-quote">Quote:</label>
+        <input type="text" id="new-post-quote" ng-model='posts.newPost.quote'>
+      </div>
+      <div>
+        <input type="submit" value="Add Post">
+      </div>
+    </form>
+</section>
